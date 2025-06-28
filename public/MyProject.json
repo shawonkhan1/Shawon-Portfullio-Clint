@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Job Portal Website",
+    "description": "A front-end job portal website built with React for job listings and applications. JWT and MongoDB are not yet integrated.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "features": [
+      "Job listings and search",
+      "User-friendly UI",
+      "Responsive design"
+    ],
+    "live_link": "https://coruscating-chaja-65f269.netlify.app/",
+    "client_git_link": "https://github.com/yourusername/job-portal-client",
+    "server_git_link": "",
+    "image": "https://i.ibb.co/vGh1rRm/Screenshot-2025-06-28-003136.png"
+  },
+  {
+    "id": 2,
+    "title": "Plant Care Tracker",
+    "description": "A full-stack plant care tracking app with user authentication and CRUD features built with MERN stack.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "features": [
+      "User authentication",
+      "Add, update, delete plants",
+      "Track plant care schedules",
+      "Responsive design"
+    ],
+    "live_link": "https://dainty-eclair-1c5c60.netlify.app/",
+    "client_git_link": "https://github.com/yourusername/plant-care-tracker-client",
+    "server_git_link": "https://github.com/yourusername/plant-care-tracker-server",
+    "image": "https://i.ibb.co/fGQDGZby/Screenshot-2025-06-28-003253.png"
+  },
+  {
+    "id": 3,
+    "title": "Hotel Booking Platform",
+    "description": "A hotel booking platform with room listings, booking management, and reviews built with MERN stack.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "features": [
+      "Room search and filter",
+      "Booking system",
+      "User reviews",
+      "Admin panel"
+    ],
+    "live_link": "https://transcendent-lokum-711768.netlify.app/",
+    "client_git_link": "https://github.com/yourusername/hotel-booking-client",
+    "server_git_link": "https://github.com/yourusername/hotel-booking-server",
+    "image": "https://i.ibb.co/KckTrHFc/Screenshot-2025-06-28-003404.png"
+  },
+  {
+    "id": 4,
+    "title": "Job Tracking Dashboard",
+    "description": "A dashboard for tracking job applications and statuses built with React and Tailwind CSS.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "features": [
+      "Job application tracking",
+      "Status updates",
+      "User-friendly UI"
+    ],
+    "live_link": "https://strong-salamander-ac341c.netlify.app/",
+    "client_git_link": "https://github.com/yourusername/job-tracking-dashboard-client",
+    "server_git_link": "",
+    "image": "https://i.ibb.co/Z7ytL0P/Screenshot-2025-06-28-003505.png"
+  },
+  
+  {
+    "id": 6,
+    "title": "English Learning Platform",
+    "description": "An interactive English learning website with lessons, quizzes, and tutorials to help users improve their language skills.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "features": [
+      "Interactive lessons",
+      "Quizzes to test knowledge",
+      "User-friendly interface",
+      "Responsive design"
+    ],
+    "live_link": "https://englishjanala-6.netlify.app/",
+    "client_git_link": "https://github.com/yourusername/english-learning-client",
+    "server_git_link": "",
+    "image": "https://i.ibb.co/Gfs6Xqjp/Screenshot-2025-06-28-003549.png"
+  }
+  
+]

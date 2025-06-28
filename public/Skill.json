@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "level": "Expert",
+    "icon": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "level": "Expert",
+    "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+  },
+  {
+    "id": 3,
+    "name": "JavaScript",
+    "level": "Intermediate",
+    "icon": "https://cdn-icons-png.flaticon.com/512/919/919828.png"
+  },
+  {
+    "id": 4,
+    "name": "React",
+    "level": "Advanced",
+    "icon": "https://cdn-icons-png.flaticon.com/512/919/919851.png"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "level": "Intermediate",
+    "icon": "https://cdn-icons-png.flaticon.com/512/919/919825.png"
+  },
+  {
+    "id": 6,
+    "name": "Express.js",
+    "level": "Intermediate",
+    "icon": "https://cdn-icons-png.flaticon.com/512/919/919837.png"
+  },
+  {
+    "id": 7,
+    "name": "MongoDB",
+    "level": "Intermediate",
+    "icon": "https://i.ibb.co/V05w3HXz/1-do-Ag1-f-MQKWFoub-6gw-Ui-Q.png"
+  },
+  {
+    "id": 8,
+    "name": "Firebase",
+    "level": "Intermediate",
+    "icon": "https://i.ibb.co/tpy2XrQP/logo-vertical.png"
+  },
+  {
+    "id": 9,
+    "name": "GitHub",
+    "level": "Intermediate",
+    "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+  }
+]
