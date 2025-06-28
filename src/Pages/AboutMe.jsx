@@ -11,7 +11,7 @@ const AboutMe = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-playfair font-bold mb-6 sm:mb-8 text-gray-900 text-center">
+      <h2 className="text-3xl py-10 sm:text-4xl md:text-5xl font-playfair font-bold  sm:mb-8 text-gray-900 text-center">
         About Me
       </h2>
       <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-sourceSans mb-4 sm:mb-6">
