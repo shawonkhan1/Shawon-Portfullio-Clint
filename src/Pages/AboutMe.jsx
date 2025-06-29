@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <motion.section
       id="about"
-      className="max-w-5xl ml-5 mr-5 md:ml-9 md:mr-9 mx-auto lg:ml-auto lg:mr-auto px-4 sm:px-6 md:px-10 mt-10 sm:mt-16 md:mt-20 bg-gray-100 rounded-lg shadow-lg"
+      className="max-w-5xl pb-5 ml-5 mr-5 md:ml-9 md:mr-9 mx-auto lg:ml-auto lg:mr-auto px-4 sm:px-6 md:px-10 mt-10 sm:mt-16 md:mt-20 bg-gray-100 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

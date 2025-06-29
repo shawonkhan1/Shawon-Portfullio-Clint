@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/shawon.jpg";
+import profile from "../assets/shawon2.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -94,20 +94,23 @@ const Banner = () => {
         </motion.div>
 
         {/* Image */}
-        <motion.div
-          className="flex justify-center flex-1 order-1 md:order-2"
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.6 }}
-        >
-          <motion.img
-            src={profile}
-            alt="MD Shawon Molla"
-            className="w-64 h-64 rounded-full border-4 border-indigo-500 object-cover shadow-xl"
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          />
-        </motion.div>
+       <motion.div
+  className="flex justify-center flex-1 order-1 md:order-2"
+  initial={{ opacity: 0, x: 40 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.9, delay: 0.6 }}
+>
+  <div className="w-64 h-64 rounded-full border-4 border-indigo-500 overflow-hidden shadow-xl">
+ 
+    <motion.img
+      src={profile}
+      alt="MD Shawon Molla"
+      className="w-full h-full object-cover scale-125"
+      
+    />
+  </div>
+</motion.div>
+
       </motion.div>
     </section>
   );

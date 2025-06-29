@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import Education from "./Education";
 import BlogList from "./BlogList";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const RootPage = () => {
   return (
@@ -20,6 +21,7 @@ const RootPage = () => {
       <BlogList></BlogList>
       <Education></Education>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 };

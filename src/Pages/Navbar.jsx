@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';  // react-scroll এর Link
 import { motion, AnimatePresence } from 'framer-motion';
 
- const sections = [
+export const sections = [
   { name: 'Home', id: 'home' },
   { name: 'About Me', id: 'about' },
   { name: 'Skills', id: 'skills' },
