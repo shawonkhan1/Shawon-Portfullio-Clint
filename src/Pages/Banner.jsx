@@ -3,6 +3,7 @@ import profile from "../assets/shawon2.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { ReactTyped } from "react-typed";
 
 const Banner = () => {
   return (
@@ -40,8 +41,15 @@ const Banner = () => {
           </Link>
 
           <h2 className="text-2xl font-semibold mb-5 text-gray-300">
-            MERN Stack Developer
+            <ReactTyped
+              strings={["MERN Stack Developer", "Frontend Developer"]}
+              typeSpeed={50}
+              backSpeed={30}
+              backDelay={1500}
+              loop
+            />
           </h2>
+
           <p className="text-gray-400 max-w-lg mb-8 leading-relaxed mx-auto md:mx-0">
             Passionate about building scalable, clean, and efficient full-stack
             web applications using MongoDB, Express, React, and Node.js.
@@ -70,7 +78,6 @@ const Banner = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 w-full">
-            
             <a href="#projects" className="w-full sm:w-auto">
               <motion.button
                 className="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-7 rounded-lg shadow-lg transition"
@@ -81,7 +88,7 @@ const Banner = () => {
               </motion.button>
             </a>
 
-            <a href="/resume.pdf" download className="w-full sm:w-auto">
+            <a href="/Resumi.pdf" download className="w-full sm:w-auto">
               <motion.button
                 className="w-full border border-indigo-500 text-indigo-500 font-semibold py-3 px-7 rounded-lg hover:bg-indigo-500 hover:text-white transition"
                 whileHover={{ scale: 1.05 }}
@@ -94,23 +101,20 @@ const Banner = () => {
         </motion.div>
 
         {/* Image */}
-       <motion.div
-  className="flex justify-center flex-1 order-1 md:order-2"
-  initial={{ opacity: 0, x: 40 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.9, delay: 0.6 }}
->
-  <div className="w-64 h-64 rounded-full border-4 border-indigo-500 overflow-hidden shadow-xl">
- 
-    <motion.img
-      src={profile}
-      alt="MD Shawon Molla"
-      className="w-full h-full object-cover scale-125"
-      
-    />
-  </div>
-</motion.div>
-
+        <motion.div
+          className="flex justify-center flex-1 order-1 md:order-2"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.6 }}
+        >
+          <div className="w-64 h-64 rounded-full border-4 border-indigo-500 overflow-hidden shadow-xl">
+            <motion.img
+              src={profile}
+              alt="MD Shawon Molla"
+              className="w-full h-full object-cover scale-125"
+            />
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );

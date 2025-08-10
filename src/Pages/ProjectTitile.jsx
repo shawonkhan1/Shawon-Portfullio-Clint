@@ -25,20 +25,19 @@ const ProjectsTitle = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
 
-useEffect(() => {
-  setLoading(true);
-  fetch("/MyProject.json")
-    .then((res) => res.json())
-    .then((data) => {
-      setProjects(data);
-      setLoading(false);
-    })
-    .catch((err) => {
-      console.error(err);
-      setLoading(false);
-    });
-}, []);
-
+  useEffect(() => {
+    setLoading(true);
+    fetch("MyProject.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <section id="projects" className="my-20 px-6 max-w-6xl mx-auto">
@@ -61,7 +60,7 @@ useEffect(() => {
       {/* Content */}
       {loading ? (
         <div className="flex justify-center items-center h-32">
-        <span className="loading loading-spinner loading-xl"></span>
+          <span className="loading loading-spinner loading-xl"></span>
         </div>
       ) : (
         <motion.div
@@ -101,11 +100,13 @@ useEffect(() => {
                   >
                     {/* Image */}
                     <div className="md:w-1/2 w-full">
-                      <img
-                        src={image}
-                        alt={title}
-                        className="h-full w-full object-cover"
-                      />
+                      <a href={live_link} target="_blank">
+                        <img
+                          src={image}
+                          alt={title}
+                          className="h-full w-full object-cover"
+                        />
+                      </a>
                     </div>
 
                     {/* Text Info */}

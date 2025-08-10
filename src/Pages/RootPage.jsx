@@ -18,7 +18,7 @@ const RootPage = () => {
       <AboutMe></AboutMe>
       <Skills></Skills>
       <ProjectsTitle></ProjectsTitle>
-      <BlogList></BlogList>
+      {/* <BlogList></BlogList> */}
       <Education></Education>
       <Contact></Contact>
       <Footer></Footer>

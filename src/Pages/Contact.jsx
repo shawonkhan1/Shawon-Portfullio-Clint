@@ -1,140 +1,124 @@
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router";
 
-const Contact = () => {
-  const navigate = useNavigate();
+const ContactCompact = () => {
+  const [status, setStatus] = useState("");
 
-  const handleContactSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
     const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const subject = form.subject.value;
-    const message = form.message.value;
 
-    const formData = {
-      name,
-      email,
-      subject,
-      message,
-    };
-
-    console.log("Submitted data:", formData);
-
-    form.reset();
-    toast.success("Message sent successfully!");
-    navigate("/");
+    fetch("https://formspree.io/f/mnnzlggy", {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          toast.success("Message sent successfully!");
+          setStatus("Message sent successfully!");
+          form.reset();
+        } else {
+          toast.error("Failed to send message. Please try again.");
+          setStatus("Failed to send message. Please try again.");
+        }
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Please try again.");
+        setStatus("Failed to send message. Please try again.");
+      });
   };
 
   return (
     <section
       id="contact"
-      className="mx-6 sm:mx-6 md:mx-10 lg:mx-auto px-4 sm:px-6 py-12 max-w-6xl bg-gray-100 rounded-xl shadow-lg my-10"
+      className="max-w-5xl bg-gray-100 border-gray-200 mx-auto px-8 py-10  rounded-lg shadow-lg"
     >
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-10 text-center">
+       <h2 className="text-4xl font-bold mb-8 text-center text-indigo-600">
         Contact Me
       </h2>
-
-      <div className="flex flex-col md:flex-row gap-10">
-        {/* Left side - Contact Info */}
-        <div className="md:w-1/2 bg-blue-500 text-white rounded-lg p-8 flex flex-col justify-center space-y-6">
-          <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
-          <p><strong>Name:</strong>MD Shawon</p>
-          <p><strong>Phone:</strong> +880 1883717078</p>
-          <p><strong>Email:</strong> shawon505214@gmail.com</p>
-          <p><strong>Address:</strong> Gosbag, Asulia, Dhaka, Bangladesh</p>
+      <div className="flex flex-col md:flex-row gap-12">
+        {/* Left info */}
+        <div className="md:w-1/3 rounded-2xl p-6 bg-blue-200 text-gray-700 space-y-5 text-base leading-relaxed">
+          <h3 className="text-2xl font-semibold mb-3">Contact Info</h3>
+          <p><strong>Name:</strong> MD Shawon Molla</p>
+          <p>
+            <strong>Email:</strong>{" "}
+            <a
+              href="mailto:shawon1@gmail.com"
+              className="text-indigo-600 hover:underline"
+            >
+              shawon505214@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a
+              href="tel:+8801234567890"
+              className="text-indigo-600 hover:underline"
+            >
+              +880 1883717078
+            </a>
+          </p>
+          <p><strong>Address:</strong> Dhaka, Bangladesh</p>
         </div>
 
-        {/* Right side - Contact Form */}
+        {/* Right form */}
+        
         <form
-          onSubmit={handleContactSubmit}
-          className="md:w-1/2 space-y-8 bg-white p-8 rounded-lg shadow-md"
+          onSubmit={handleSubmit}
+          className="md:w-2/3 space-y-6"
+          noValidate
         >
-          {/* Name & Email */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block mb-2 font-semibold text-gray-700"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-sm"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block mb-2 font-semibold text-gray-700"
-              >
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-sm"
-              />
-            </div>
-          </div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            className="w-full border border-gray-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+          />
 
-          {/* Subject */}
-          <div>
-            <label
-              htmlFor="subject"
-              className="block mb-2 font-semibold text-gray-700"
-            >
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-sm"
-            />
-          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            className="w-full border border-gray-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+          />
 
-          {/* Message */}
-          <div>
-            <label
-              htmlFor="message"
-              className="block mb-2 font-semibold text-gray-700"
-            >
-              Your Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Type your message here..."
-              required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none text-sm"
-            ></textarea>
-          </div>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+            className="w-full border border-gray-300 rounded-md px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+          />
 
-          {/* Submit Button */}
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+            className="w-full border border-gray-300 rounded-md px-4 py-3 text-base resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+          ></textarea>
+
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition"
+            className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-md hover:bg-indigo-700 transition text-lg"
           >
             Send Message
           </button>
+          {status && (
+            <p className="mt-3 text-center text-indigo-600 font-semibold text-base">
+              {status}
+            </p>
+          )}
         </form>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default ContactCompact;

@@ -47,7 +47,7 @@ const AboutMe = () => {
         >
           shawon505214@gmail.com
         </a>{" "}
-        or call me at <span className="font-semibold">01883717078</span>.
+        or call me at <span className="font-semibold">+880 1883717078</span>.
       </p>
     </motion.section>
   );

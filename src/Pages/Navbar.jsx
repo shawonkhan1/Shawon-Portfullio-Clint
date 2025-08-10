@@ -7,9 +7,9 @@ export const sections = [
   { name: 'About Me', id: 'about' },
   { name: 'Skills', id: 'skills' },
   { name: 'Projects', id: 'projects' },
-  { name: 'Blog', id: 'blog' },
    { name: 'Education', id: 'education' },
   { name: 'Contact', id: 'contact' },
+  
 
 ];
 
@@ -37,7 +37,7 @@ const Navbar = () => {
           className="text-2xl font-bold text-gray-800 hover:text-indigo-600 transition cursor-pointer"
           onClick={handleLinkClick}
         >
-          Shawon<span className="text-indigo-600">Molla</span>
+         MD <span className="text-indigo-600">Shawon</span>
         </ScrollLink>
 
         {/* Desktop Links */}
@@ -51,7 +51,7 @@ const Navbar = () => {
               offset={-80}
               className="relative px-2 py-1 font-medium transition text-gray-700 hover:text-indigo-600 cursor-pointer"
               activeClass="text-indigo-600 font-semibold"
-              spy={true}  // scroll এ active class পাবার জন্য
+              spy={true} 
               onClick={handleLinkClick}
             >
               {name}
