@@ -5,49 +5,39 @@ const AboutMe = () => {
   return (
     <motion.section
       id="about"
-      className="w-11/12 mx-auto pb-5 ml-5 mr-5 md:ml-9 md:mr-9 mx-auto lg:ml-auto lg:mr-auto px-4 sm:px-6 md:px-10 mt-10 sm:mt-16 md:mt-20 bg-gray-100 rounded-lg shadow-lg"
+      className="w-11/12 mx-auto pb-5 px-4 sm:px-6 md:px-10 mt-10 sm:mt-16 md:mt-20 bg-gray-100 rounded-lg shadow-lg"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <h2 className="text-3xl py-10 sm:text-4xl md:text-5xl font-playfair font-bold  sm:mb-8 text-gray-900 text-center">
+      <h2 className="text-3xl py-10 sm:text-4xl md:text-5xl font-playfair font-bold sm:mb-8 text-gray-900 text-center">
         About Me
       </h2>
-      <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-sourceSans mb-4 sm:mb-6">
-        Hello! I am <span className="font-semibold">Md Shawon Molla</span>,
-        currently pursuing a Diploma in Engineering with a focus on Computer
-        Science from Baliakandi, Rajbari, Dhaka. I have a deep passion for
-        programming and software development, and I am dedicated to growing my
-        skills as a full-stack developer.
+
+      {/* 1. Detailed introduction about yourself */}
+      <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6">
+        Hello! I am <span className="font-semibold">Md Shawon Molla</span>. I am a passionate programmer and software developer with a deep interest in building efficient and user-friendly applications.
       </p>
-      <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-sourceSans mb-4 sm:mb-6">
-        Throughout my learning journey, I have gained practical experience in
-        modern web development technologies, including{" "}
-        <span className="font-semibold">
-          React.js, Node.js, Express.js, MongoDB, Tailwind CSS,
-        </span>{" "}
-        and authentication with <span className="font-semibold">JWT</span>. I
-        enjoy building clean, efficient, and user-friendly applications, with a
-        special interest in creating scalable MERN stack projects.
+
+      {/* 2. Your programming journey */}
+      <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6">
+        My programming journey started 1 years ago, beginning with basics like HTML and CSS, and gradually advancing to JavaScript and React.js. Over time, I have gained experience building full-stack MERN applications and constantly enjoy learning new technologies.
       </p>
-      <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-sourceSans mb-4 sm:mb-6">
-        My goal is to leverage my skills to contribute to innovative and
-        impactful software solutions. I continuously seek to learn new
-        technologies and best practices to stay up-to-date in this fast-evolving
-        industry. Apart from coding, I enjoy exploring new trends in software
-        development and refining my problem-solving abilities.
+
+      {/* 3. The type of work you enjoy */}
+      <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6">
+        I especially enjoy working on projects that challenge my problem-solving skills and creativity. Building scalable and maintainable software solutions, especially in frontend development, is something I truly love.
       </p>
-      <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-sourceSans mb-4 sm:mb-6">
-        I am approachable and open to new challenges and collaborations. Feel
-        free to connect with me via email at{" "}
-        <a
-          href="mailto:shawon505214@gmail.com"
-          className="text-blue-600 underline"
-        >
-          shawon505214@gmail.com
-        </a>{" "}
-        or call me at <span className="font-semibold">+880 1883717078</span>.
+
+      {/* 4. Any hobbies or interests outside of programming */}
+      <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6">
+        Outside of programming, I enjoy sports like cricket, painting, and exploring new cultures through travel. These hobbies help me stay balanced and inspired.
+      </p>
+
+      {/* 5. Showcase your personality */}
+      <p className="text-gray-800 text-base sm:text-lg leading-relaxed mb-6">
+        I am a curious, open-minded, and hardworking person who values teamwork and continuous learning. I believe in delivering quality work and always strive to improve myself and the projects I work on.
       </p>
     </motion.section>
   );
