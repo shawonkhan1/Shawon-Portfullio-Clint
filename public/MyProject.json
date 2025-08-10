@@ -2,23 +2,48 @@
   {
     "id": 1,
     "title": "Borak Polytechnic Institute",
-    "description": "A role-based online education platform for Students, Teachers, and Admins with secure authentication and course management. ",
-    "technologies": ["React.js, Tailwind CSS, Express.js, MongoDB, JWT, Firebase Auth, Node js , Stripe"],
+    "description": "A role-based online education platform for Students, Teachers, and Admins with secure authentication and course management.",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Firebase Auth",
+      "Node.js",
+      "Stripe"
+    ],
     "features": [
-      "Students can enroll in courses, view content, and track progress ",
+      "Students can enroll in courses, view content, and track progress",
       "Teachers can manage courses, upload materials, and interact with students",
       "Admin can oversee the platform, manage users, and handle content moderation"
     ],
     "live_link": "https://bejewelled-strudel-e37f3d.netlify.app/",
     "client_git_link": "https://github.com/shawonkhan1/Borak-Polytechnic-Institute",
     "server_git_link": "https://github.com/shawonkhan1/Borak-Polytechnic-Institute-Server",
-    "image": "https://i.ibb.co/WNqhfg6y/Screenshot-2025-07-19-214209.png"
+    "image": "https://i.ibb.co/WNqhfg6y/Screenshot-2025-07-19-214209.png",
+    "challenges": [
+      "Implementing secure role-based authentication",
+      "Handling real-time updates efficiently",
+      "Integrating Stripe payment gateway"
+    ],
+    "future_plans": [
+      "Add mobile app support",
+      "Improve UI with animations",
+      "Add more courses and interactive lessons"
+    ]
   },
   {
     "id": 2,
     "title": "Hotel Booking Platform",
     "description": "A hotel booking platform with room listings, booking management, and reviews built with MERN stack.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
     "features": [
       "Room search and filter",
       "Booking system",
@@ -28,13 +53,29 @@
     "live_link": "https://transcendent-lokum-711768.netlify.app/",
     "client_git_link": "https://github.com/shawonkhan1/-Hotel-Booking-Platform",
     "server_git_link": "https://github.com/shawonkhan1/-Hotel-Booking-Platform-Server",
-    "image": "https://i.ibb.co/KckTrHFc/Screenshot-2025-06-28-003404.png"
+    "image": "https://i.ibb.co/KckTrHFc/Screenshot-2025-06-28-003404.png",
+    "challenges": [
+      "Managing complex booking logic",
+      "Ensuring secure payment processing",
+      "Building a scalable admin panel"
+    ],
+    "future_plans": [
+      "Add user profile customization",
+      "Implement push notifications",
+      "Enhance search filters"
+    ]
   },
   {
     "id": 3,
     "title": "Plant Care Tracker",
     "description": "A full-stack plant care tracking app with user authentication and CRUD features built with MERN stack.",
-    "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
     "features": [
       "User authentication",
       "Add, update, delete plants",
@@ -44,6 +85,16 @@
     "live_link": "https://dainty-eclair-1c5c60.netlify.app/",
     "client_git_link": "https://github.com/shawonkhan1/Plant-Care",
     "server_git_link": "https://github.com/shawonkhan1/Plant-Care-Server",
-    "image": "https://i.ibb.co/fGQDGZby/Screenshot-2025-06-28-003253.png"
+    "image": "https://i.ibb.co/fGQDGZby/Screenshot-2025-06-28-003253.png",
+    "challenges": [
+      "Implementing real-time notifications",
+      "Designing user-friendly interfaces",
+      "Optimizing database queries"
+    ],
+    "future_plans": [
+      "Add AI-powered plant care suggestions",
+      "Mobile app development",
+      "Social sharing features"
+    ]
   }
 ]

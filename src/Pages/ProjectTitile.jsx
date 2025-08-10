@@ -1,5 +1,7 @@
+// ProjectsTitle.jsx
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "react-router";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -22,6 +24,7 @@ const cardVariants = {
 };
 
 const ProjectsTitle = () => {
+  const location = useLocation();
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -38,6 +41,16 @@ const ProjectsTitle = () => {
         setLoading(false);
       });
   }, []);
+
+  // detials back
+  useEffect(() => {
+    if (location.state?.scrollTo === "projects") {
+      const el = document.getElementById("projects");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <section id="projects" className="my-20 px-6 w-full mx-auto">
@@ -100,7 +113,7 @@ const ProjectsTitle = () => {
                   >
                     {/* Image */}
                     <div className="md:w-1/2 w-full">
-                      <a href={live_link} target="_blank">
+                      <a href={live_link} target="_blank" rel="noreferrer">
                         <img
                           src={image}
                           alt={title}
@@ -164,6 +177,14 @@ const ProjectsTitle = () => {
                             Server Side Code
                           </a>
                         )}
+
+                        {/* Details Button */}
+                        <Link
+                          to={`/projects/${id}`}
+                          className="px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700"
+                        >
+                          Details
+                        </Link>
                       </div>
                     </div>
                   </motion.div>
