@@ -117,7 +117,7 @@ const ProjectDetails = () => {
             href={project.client_git_link}
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+            className="px-4 py-2 border border-gray-300 rounded hover:text-white hover:bg-indigo-700"
           >
             Client Code
           </a>
@@ -127,7 +127,7 @@ const ProjectDetails = () => {
             href={project.server_git_link}
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100"
+            className="px-4 py-2 border hover:text-white hover:bg-indigo-700 border-gray-300 rounded "
           >
             Server Code
           </a>
@@ -137,7 +137,7 @@ const ProjectDetails = () => {
       <Link
         to="/"
         state={{ scrollTo: "projects" }}
-        className="inline-block mt-8 text-blue-600 hover:underline"
+        className="inline-block mt-8 font-bold text-blue-600 hover:text-blue-800"
       >
         ← Back to Projects
       </Link>

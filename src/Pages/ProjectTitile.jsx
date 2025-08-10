@@ -162,7 +162,7 @@ const ProjectsTitle = () => {
                             href={client_git_link}
                             target="_blank"
                             rel="noreferrer"
-                            className="px-4 py-2 rounded-md border border-gray-300 text-sm hover:bg-gray-100"
+                            className="px-4 hover:text-white hover:bg-indigo-700 py-2 rounded-md border border-gray-300 text-sm hover:bg-gray-100"
                           >
                             Client Side Code
                           </a>
@@ -172,7 +172,7 @@ const ProjectsTitle = () => {
                             href={server_git_link}
                             target="_blank"
                             rel="noreferrer"
-                            className="px-4 py-2 rounded-md border border-gray-300 text-sm hover:bg-gray-100"
+                            className="px-4 py-2 rounded-md border hover:text-white hover:bg-indigo-700 border-gray-300 text-sm hover:bg-gray-100"
                           >
                             Server Side Code
                           </a>
