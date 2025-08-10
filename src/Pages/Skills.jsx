@@ -56,7 +56,7 @@ const Skills = () => {
   return (
     <motion.section
      id="skills"
-      className="max-w-5xl mx-auto my-20 px-4"
+      className="w-11/12 mx-auto my-20 px-4"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -76,7 +76,7 @@ const Skills = () => {
         {skills.map(({ id, name, level, icon }) => (
           <motion.div
             key={id}
-            className="bg-white rounded-lg shadow-md p-6 border border-gray-200 text-center cursor-pointer hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-100 rounded-lg shadow-md p-6 border border-gray-200 text-center cursor-pointer hover:shadow-xl transition-shadow duration-300"
             variants={itemVariants}
             whileHover={{
               scale: 1.05,

@@ -34,7 +34,7 @@ const ContactCompact = () => {
   return (
     <section
       id="contact"
-      className="max-w-5xl bg-gray-100 border-gray-200 mx-auto px-8 py-10  rounded-lg shadow-lg"
+      className="max-w-7xl bg-gray-100 border-gray-200 mx-auto px-8 py-10  rounded-lg shadow-lg mb-10"
     >
        <h2 className="text-4xl font-bold mb-8 text-center text-indigo-600">
         Contact Me

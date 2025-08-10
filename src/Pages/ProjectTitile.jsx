@@ -40,7 +40,7 @@ const ProjectsTitle = () => {
   }, []);
 
   return (
-    <section id="projects" className="my-20 px-6 max-w-6xl mx-auto">
+    <section id="projects" className="my-20 px-6 w-full mx-auto">
       {/* Title */}
       <motion.div
         className="text-center mb-12"
@@ -64,7 +64,7 @@ const ProjectsTitle = () => {
         </div>
       ) : (
         <motion.div
-          className="space-y-14"
+          className="space-y-14 w-11/12 mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -110,7 +110,7 @@ const ProjectsTitle = () => {
                     </div>
 
                     {/* Text Info */}
-                    <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div className="p-6 bg-gray-100 flex-1 flex flex-col justify-between space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold text-gray-900 mb-2">
                           {title}

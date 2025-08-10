@@ -13,7 +13,7 @@ const sections = [
 
 const Footer = () => {
   return (
-    <footer id="Footer" className="bg-gray-700 text-gray-300 py-10 px-6 md:px-20">
+    <footer id="Footer" className="bg-gray-900 text-gray-300 py-10 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Logo / Brand */}
         <div className="text-white text-2xl font-bold cursor-pointer select-none">
